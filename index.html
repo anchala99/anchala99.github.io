@@ -186,12 +186,33 @@
 <div id="main">
 	STATURE
 	<br>
-	NYC<br><a href="mailto:hello@staturenyc.com">HELLO@</a>  <br>  
+	NYC<br><a href="javascript:show()">HELLO@</a>  <br> 
+    <div id="contactform" style="display:none;">
+    <form action="https://formspree.io/hello@staturenyc.com"
+      method="POST">
+    <input type="text" placeholder="Name" name="name">
+    <input type="email" placeholder="Email" name="_replyto">
+    <input type="text" placeholder="Talk to us" name="message">
+    <input type="submit" value="Send">
+    </form>
+    </div>
+</form> 
+<script>
+function show() {
+	if (document.getElementById('contactform').style.display == "none") {
+		document.getElementById('contactform').style = "display:visibile;"
+	} else {
+		document.getElementById('contactform').style = "display:none;"	
+	}
+}
+</script>
             <p>press any key to see who made our short list ;)</p>
 	<a href="https://www.instagram.com/stature.nyc" target="_blank">
-		<img src="instagram.png">
-	</a>&nbsp;
-
+		<img src="instagram.png"
+	</a>
+    <a href="https://www.facebook.com/staturenyc" target="_blank">
+		<img src="facebook.png"
+	</a>
 </div>
 
 <script type="text/javascript" src="main.js"></script>
